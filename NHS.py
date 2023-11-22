@@ -3,18 +3,9 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 import pandas as pd
-import os
 
-# Everything is accessible via the st.secrets dict:
-st.write("DB username:", st.secrets["elijaht21"])
-st.write("DB password:", st.secrets["fiyinfoluwa234,"])
-st.write("My cool secrets:", st.secrets["my_cool_secrets"]["things_i_like"])
 
-# And the root-level secrets are also accessible as environment variables:
-st.write(
-    "Has environment variables been set:",
-    os.environ["db_username"] == st.secrets["elijaht21"],
-)
+
 
 def scrape_jobs(position, location, miles, template, pages=2):
     driver = webdriver.Chrome()
