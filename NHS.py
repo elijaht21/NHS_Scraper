@@ -9,7 +9,7 @@ import pandas as pd
 
 
 
-
+@st.cache_resource
 def scrape_jobs(position, location, miles, template, pages=2):
     def get_driver():
 
