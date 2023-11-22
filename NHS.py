@@ -20,7 +20,7 @@ def scrape_jobs(position, location, miles, template, pages=2):
     options.add_argument('--headless')
 
     driver = get_driver()
-    driver = webdriver.Chrome()driver = webdriver.Chrome()
+   
 
     titles = []
     companies = []
